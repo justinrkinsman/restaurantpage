@@ -1,6 +1,6 @@
 import Logo from './logo.png'
 
-function component() {
+function componentHome() {
     const element = document.createElement('div')
     const myLogo = new Image();
     myLogo.src = Logo;
@@ -14,17 +14,34 @@ function component() {
     const homeBtn = document.createElement('button')
     homeBtn.textContent = 'Home'
     element.appendChild(homeBtn)
+    homeBtn.setAttribute('id', 'home')
     const menuBtn = document.createElement('button')
     menuBtn.textContent = 'Menu'
+    menuBtn.setAttribute('id', 'menu')
     element.appendChild(menuBtn)
     const contactBtn = document.createElement('button')
     contactBtn.textContent = 'Contact'
+    contactBtn.setAttribute('id', 'contact')
     element.appendChild(contactBtn)
     return element
 }
 
-const element = document.getElementById('content')
-element.appendChild(component())
+function componentMenu() {
+    alert('Menu page coming soon')
+}
 
-console.log('Hello')
-console.log('Hi diddly ho neighbourino')
+function componentContact() {
+    alert('Contact page coming soon')
+}
+
+const element = document.getElementById('content')
+element.appendChild(componentHome())
+
+let homePage = document.getElementById('home')
+homePage.addEventListener('click', componentHome())
+
+let menuPage = document.getElementById('menu')
+menuPage.addEventListener('click', componentMenu)
+
+let contactPage = document.getElementById('contact')
+contactPage.addEventListener('click', componentContact)
