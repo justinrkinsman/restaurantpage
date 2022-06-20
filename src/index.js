@@ -11,6 +11,15 @@ function component() {
     const tagline = document.createElement('p')
     tagline.textContent = "Here at Globo Gym we're better than you, and we know it!"
     element.appendChild(tagline)
+    const homeBtn = document.createElement('button')
+    homeBtn.textContent = 'Home'
+    element.appendChild(homeBtn)
+    const menuBtn = document.createElement('button')
+    menuBtn.textContent = 'Menu'
+    element.appendChild(menuBtn)
+    const contactBtn = document.createElement('button')
+    contactBtn.textContent = 'Contact'
+    element.appendChild(contactBtn)
     return element
 }
 
