@@ -39,7 +39,11 @@ export function onLoad(){
         element.appendChild(title)
         const tagline = document.createElement('p')
         tagline.textContent = "Here at Globo Gym we're better than you, and we know it!"
-        element.appendChild(tagline)
+        const homePageText = document.createElement('div')
+        homePageText.setAttribute('class', 'homePageText')
+        homePageText.appendChild(title)
+        homePageText.appendChild(tagline)
+        element.appendChild(homePageText)
         element.appendChild(workout)
         return element
     }
@@ -63,8 +67,15 @@ export function componentHome() {
     newElement.appendChild(title)
     const tagline = document.createElement('p')
     tagline.textContent = "Here at Globo Gym we're better than you, and we know it!"
-    newElement.appendChild(tagline)
+    //newElement.appendChild(tagline)
+    //content.appendChild(newElement)
+    const homePageText = document.createElement('div')
+    homePageText.setAttribute('class', 'homePageText')
+    homePageText.appendChild(title)
+    homePageText.appendChild(tagline)
+    newElement.appendChild(homePageText)
     newElement.appendChild(workout)
+    //content.appendChild(element)
     content.appendChild(newElement)
 }
 

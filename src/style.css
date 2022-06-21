@@ -26,3 +26,7 @@ button {
     width: 500px;
     height: auto
 }
+
+.homePageText {
+    background-color: rgb(118, 20, 209);
+}
