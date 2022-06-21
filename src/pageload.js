@@ -1,3 +1,5 @@
+import Logo from './logo.png'
+
 export function onLoad(){
     const element = document.getElementById('content')
     function componentOnLoad() {
@@ -29,6 +31,6 @@ export function onLoad(){
     element.appendChild(componentOnLoad())
 }
 
-export function consoleLogTest(){
+/*export function consoleLogTest(){
     console.log('It works!')
-}
+}*/

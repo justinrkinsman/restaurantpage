@@ -1,8 +1,8 @@
 import Logo from './logo.png'
-//import onLoad from './pageload.js'
-import {consoleLogTest} from './pageload.js'
+import {onLoad} from './pageload.js'
+//import {consoleLogTest} from './pageload.js'
 
-function componentOnLoad() {
+/*function componentOnLoad() {
     const element = document.createElement('div')
     const myLogo = new Image();
     myLogo.src = Logo;
@@ -18,10 +18,10 @@ function componentOnLoad() {
     homeBtn.textContent = 'Home'
     element.appendChild(homeBtn)
     homeBtn.setAttribute('id', 'home')
-    const test = document.createElement('button')
-    test.textContent = 'test'
-    test.setAttribute('id', 'test')
-    element.appendChild(test)
+    //const test = document.createElement('button')
+    //test.textContent = 'test'
+    //test.setAttribute('id', 'test')
+    //element.appendChild(test)
     const menuBtn = document.createElement('button')
     menuBtn.textContent = 'Menu'
     menuBtn.setAttribute('id', 'menu')
@@ -31,7 +31,7 @@ function componentOnLoad() {
     contactBtn.setAttribute('id', 'contact')
     element.appendChild(contactBtn)
     return element
-}
+}*/
 
 function componentHome() {
     const content = document.getElementById('content')
@@ -126,8 +126,10 @@ function componentContact() {
     return newElement
 }
 
-const element = document.getElementById('content')
-element.appendChild(componentOnLoad())
+//const element = document.getElementById('content')
+//element.appendChild(onLoad())
+
+document.addEventListener("load", onLoad())
 
 let homePage = document.getElementById('home')
 homePage.addEventListener('click', componentHome)
@@ -138,5 +140,5 @@ menuPage.addEventListener('click', componentMenu)
 let contactPage = document.getElementById('contact')
 contactPage.addEventListener('click', componentContact)
 
-let testBtn = document.getElementById('test')
-testBtn.addEventListener('click', consoleLogTest)
+/*let testBtn = document.getElementById('test')
+testBtn.addEventListener('click', consoleLogTest)*/
