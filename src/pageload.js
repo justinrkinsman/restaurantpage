@@ -2,18 +2,9 @@ import Logo from './logo.png'
 
 export function onLoad(){
     const element = document.getElementById('content')
-    function componentOnLoad() {
+    function buttonsOnLoad() {
         const element = document.createElement('div')
-        const myLogo = new Image();
-        myLogo.src = Logo;
-        element.setAttribute('id', 'element')
-        element.appendChild(myLogo)
-        const title = document.createElement('h2')
-        title.textContent = 'Welcome to Globo Gym Restaurant'
-        element.appendChild(title)
-        const tagline = document.createElement('p')
-        tagline.textContent = "Here at Globo Gym we're better than you, and we know it!"
-        element.appendChild(tagline)
+        element.setAttribute('id', 'buttons')
         const homeBtn = document.createElement('button')
         homeBtn.textContent = 'Home'
         element.appendChild(homeBtn)
@@ -26,6 +17,21 @@ export function onLoad(){
         contactBtn.textContent = 'Contact'
         contactBtn.setAttribute('id', 'contact')
         element.appendChild(contactBtn)
+        return element
+    }
+    element.appendChild(buttonsOnLoad())
+    function componentOnLoad() {
+        const element = document.createElement('div')
+        const myLogo = new Image();
+        myLogo.src = Logo;
+        element.setAttribute('id', 'element')
+        element.appendChild(myLogo)
+        const title = document.createElement('h2')
+        title.textContent = 'Welcome to Globo Gym Restaurant'
+        element.appendChild(title)
+        const tagline = document.createElement('p')
+        tagline.textContent = "Here at Globo Gym we're better than you, and we know it!"
+        element.appendChild(tagline)
         return element
     }
     element.appendChild(componentOnLoad())
@@ -46,20 +52,7 @@ export function componentHome() {
     const tagline = document.createElement('p')
     tagline.textContent = "Here at Globo Gym we're better than you, and we know it!"
     newElement.appendChild(tagline)
-    const homeBtn = document.createElement('button')
-    homeBtn.textContent = 'Home'
-    newElement.appendChild(homeBtn)
-    homeBtn.setAttribute('id', 'home')
-    const menuBtn = document.createElement('button')
-    menuBtn.textContent = 'Menu'
-    menuBtn.setAttribute('id', 'menu')
-    newElement.appendChild(menuBtn)
-    const contactBtn = document.createElement('button')
-    contactBtn.textContent = 'Contact'
-    contactBtn.setAttribute('id', 'contact')
-    newElement.appendChild(contactBtn)
     content.appendChild(newElement)
-    return newElement
 }
 
 export function componentMenu() {
@@ -77,20 +70,7 @@ export function componentMenu() {
     const tagline = document.createElement('p')
     tagline.textContent = "Menu page coming soon!"
     newElement.appendChild(tagline)
-    const homeBtn = document.createElement('button')
-    homeBtn.textContent = 'Home'
-    newElement.appendChild(homeBtn)
-    homeBtn.setAttribute('id', 'home')
-    const menuBtn = document.createElement('button')
-    menuBtn.textContent = 'Menu'
-    menuBtn.setAttribute('id', 'menu')
-    newElement.appendChild(menuBtn)
-    const contactBtn = document.createElement('button')
-    contactBtn.textContent = 'Contact'
-    contactBtn.setAttribute('id', 'contact')
-    newElement.appendChild(contactBtn)
     content.appendChild(newElement)
-    return newElement
 }
 
 export function componentContact() {
@@ -108,18 +88,5 @@ export function componentContact() {
     const tagline = document.createElement('p')
     tagline.textContent = "Contact page coming soon!"
     newElement.appendChild(tagline)
-    const homeBtn = document.createElement('button')
-    homeBtn.textContent = 'Home'
-    newElement.appendChild(homeBtn)
-    homeBtn.setAttribute('id', 'home')
-    const menuBtn = document.createElement('button')
-    menuBtn.textContent = 'Menu'
-    menuBtn.setAttribute('id', 'menu')
-    newElement.appendChild(menuBtn)
-    const contactBtn = document.createElement('button')
-    contactBtn.textContent = 'Contact'
-    contactBtn.setAttribute('id', 'contact')
-    newElement.appendChild(contactBtn)
     content.appendChild(newElement)
-    return newElement
 }
