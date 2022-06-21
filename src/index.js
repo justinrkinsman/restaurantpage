@@ -1,4 +1,6 @@
 import Logo from './logo.png'
+//import onLoad from './pageload.js'
+import {consoleLogTest} from './pageload.js'
 
 function componentOnLoad() {
     const element = document.createElement('div')
@@ -16,6 +18,10 @@ function componentOnLoad() {
     homeBtn.textContent = 'Home'
     element.appendChild(homeBtn)
     homeBtn.setAttribute('id', 'home')
+    const test = document.createElement('button')
+    test.textContent = 'test'
+    test.setAttribute('id', 'test')
+    element.appendChild(test)
     const menuBtn = document.createElement('button')
     menuBtn.textContent = 'Menu'
     menuBtn.setAttribute('id', 'menu')
@@ -131,3 +137,6 @@ menuPage.addEventListener('click', componentMenu)
 
 let contactPage = document.getElementById('contact')
 contactPage.addEventListener('click', componentContact)
+
+let testBtn = document.getElementById('test')
+testBtn.addEventListener('click', consoleLogTest)
