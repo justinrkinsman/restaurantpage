@@ -2,6 +2,7 @@ import Logo from './logo.png'
 import Shake from './shake.jpg'
 import Balls from './balls.jpg'
 import Salad from './salad.jpg'
+import Gym from './gym.jpg'
 
 export function onLoad(){
     const element = document.getElementById('content')
@@ -104,6 +105,8 @@ export function componentContact() {
     const content = document.getElementById('content')
     const element = document.getElementById('element')
     content.removeChild(element)
+    const gym = new Image();
+    gym.src = Gym
     const newElement = document.createElement('div')
     newElement.setAttribute('id', 'element')
     const myLogo = new Image();
@@ -118,6 +121,7 @@ export function componentContact() {
     phoneNumber.textContent = '555-5555'
     newElement.appendChild(address)
     newElement.appendChild(phoneNumber)
+    newElement.appendChild(gym)
     content.appendChild(newElement)
 }
 
@@ -135,4 +139,8 @@ https://unsplash.com/@abbiew
 salad:
 https://unsplash.com/photos/IGfIGP5ONV0
 https://unsplash.com/@annapelzer
+
+LA:
+https://unsplash.com/photos/wdCkqK1oRIc
+https://unsplash.com/@rpnickson
 */
