@@ -3,6 +3,7 @@ import Shake from './shake.jpg'
 import Balls from './balls.jpg'
 import Salad from './salad.jpg'
 import Gym from './gym.jpg'
+import Workout from './workout.jpg'
 
 export function onLoad(){
     const element = document.getElementById('content')
@@ -30,12 +31,15 @@ export function onLoad(){
         myLogo.src = Logo;
         element.setAttribute('id', 'element')
         element.appendChild(myLogo)
+        const workout = new Image();
+        workout.src = Workout
         const title = document.createElement('h2')
         title.textContent = 'Welcome to Globo Gym Restaurant'
         element.appendChild(title)
         const tagline = document.createElement('p')
         tagline.textContent = "Here at Globo Gym we're better than you, and we know it!"
         element.appendChild(tagline)
+        element.appendChild(workout)
         return element
     }
     element.appendChild(componentOnLoad())
@@ -48,6 +52,8 @@ export function componentHome() {
     const newElement = document.createElement('div')
     const myLogo = new Image();
     myLogo.src = Logo;
+    const workout = new Image();
+    workout.src = Workout
     newElement.setAttribute('id', 'element')
     newElement.appendChild(myLogo)
     const title = document.createElement('h2')
@@ -56,6 +62,7 @@ export function componentHome() {
     const tagline = document.createElement('p')
     tagline.textContent = "Here at Globo Gym we're better than you, and we know it!"
     newElement.appendChild(tagline)
+    newElement.appendChild(workout)
     content.appendChild(newElement)
 }
 
@@ -117,8 +124,8 @@ export function componentContact() {
     newElement.appendChild(title)
     const address = document.createElement('p')
     const phoneNumber = document.createElement('p')
-    address.textContent = "11124 Sunset Blvd. Los Angeles, CA"
-    phoneNumber.textContent = '555-5555'
+    address.textContent = "ADDRESS.....11124 Sunset Blvd. Los Angeles, CA"
+    phoneNumber.textContent = 'PHONE NUMBER.....(555)555-5555'
     newElement.appendChild(address)
     newElement.appendChild(phoneNumber)
     newElement.appendChild(gym)
@@ -143,4 +150,8 @@ https://unsplash.com/@annapelzer
 LA:
 https://unsplash.com/photos/wdCkqK1oRIc
 https://unsplash.com/@rpnickson
+
+gym workout:
+https://unsplash.com/photos/LOA2mTj1vhc
+https://unsplash.com/@good_citizen
 */
