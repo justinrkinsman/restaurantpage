@@ -32,6 +32,7 @@ export function onLoad(){
         element.setAttribute('id', 'element')
         element.appendChild(myLogo)
         const workout = new Image();
+        workout.setAttribute('id', 'workout')
         workout.src = Workout
         const title = document.createElement('h2')
         title.textContent = 'Welcome to Globo Gym Restaurant'
@@ -53,6 +54,7 @@ export function componentHome() {
     const myLogo = new Image();
     myLogo.src = Logo;
     const workout = new Image();
+    workout.setAttribute('id', 'homeWorkout')
     workout.src = Workout
     newElement.setAttribute('id', 'element')
     newElement.appendChild(myLogo)
@@ -113,6 +115,7 @@ export function componentContact() {
     const element = document.getElementById('element')
     content.removeChild(element)
     const gym = new Image();
+    gym.setAttribute('id', 'gym')
     gym.src = Gym
     const newElement = document.createElement('div')
     newElement.setAttribute('id', 'element')

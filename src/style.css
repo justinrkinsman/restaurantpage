@@ -20,3 +20,8 @@ button {
     margin: 50px 50px 50px 0px;
     align-items: center;
 }
+
+#workout, #homeWorkout, #gym {
+    width: 500px;
+    height: auto
+}
