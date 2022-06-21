@@ -82,13 +82,21 @@ export function componentMenu() {
     menuItem.textContent = 'Protein Shake........$12' 
     menuItem1.textContent = 'Energy Balls.......$16'
     menuItem2.textContent = 'Macro Salad.........$14'
-    newElement.appendChild(menuItem)
-    newElement.appendChild(menuItemPic)
-    newElement.appendChild(menuItem1)
-    newElement.appendChild(menuItemPic1)
-    newElement.appendChild(menuItem2)
-    newElement.appendChild(menuItemPic2)
-    content.appendChild(newElement)
+    const menuEntry = document.createElement('div')
+    const menuEntry1 = document.createElement('div')
+    const menuEntry2 = document.createElement('div')
+    menuEntry.setAttribute('id', 'menuEntry')
+    menuEntry1.setAttribute('id', 'menuEntry1')
+    menuEntry2.setAttribute('id', 'menuEntry2')
+    menuEntry.appendChild(menuItem)
+    menuEntry.appendChild(menuItemPic)
+    menuEntry1.appendChild(menuItem1)
+    menuEntry1.appendChild(menuItemPic1)
+    menuEntry2.appendChild(menuItem2)
+    menuEntry2.appendChild(menuItemPic2)
+    content.appendChild(menuEntry)
+    content.appendChild(menuEntry1)
+    content.appendChild(menuEntry2)
 }
 
 export function componentContact() {
@@ -116,8 +124,8 @@ export function componentContact() {
 /*
 Photo creds:
 shake:
-https://unsplash.com/photos/0BF_Kpcmyig
-https://unsplash.com/@louishansel
+https://unsplash.com/photos/O_FTiCNJ1sE
+https://unsplash.com/@nature_zen
 
 balls:
 https://unsplash.com/photos/e34KSdVAs1U

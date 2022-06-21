@@ -12,3 +12,9 @@ button {
     color: white;
     border-radius: 12px;
 }
+
+#menuEntry, #menuEntry1, #menuEntry2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
