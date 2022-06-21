@@ -140,8 +140,13 @@ export function componentContact() {
     const phoneNumber = document.createElement('p')
     address.textContent = "ADDRESS.....11124 Sunset Blvd. Los Angeles, CA"
     phoneNumber.textContent = 'PHONE NUMBER.....(555)555-5555'
-    newElement.appendChild(address)
-    newElement.appendChild(phoneNumber)
+    //newElement.appendChild(address)
+    //newElement.appendChild(phoneNumber)
+    const contactPageText = document.createElement('div')
+    contactPageText.setAttribute('class', 'homePageText')
+    contactPageText.appendChild(address)
+    contactPageText.appendChild(phoneNumber)
+    newElement.appendChild(contactPageText)
     newElement.appendChild(gym)
     content.appendChild(newElement)
 }
