@@ -67,9 +67,15 @@ export function componentMenu() {
     const title = document.createElement('h2')
     title.textContent = 'Menu'
     newElement.appendChild(title)
-    const tagline = document.createElement('p')
-    tagline.textContent = "Menu page coming soon!"
-    newElement.appendChild(tagline)
+    const menuItem = document.createElement('p')
+    const menuItem1 = document.createElement('p')
+    const menuItem2 = document.createElement('p')
+    menuItem.textContent = 'Protein Shake........$12' 
+    menuItem1.textContent = 'Energy Balls.......$16'
+    menuItem2.textContent = 'Macro Salad.........$14'
+    newElement.appendChild(menuItem)
+    newElement.appendChild(menuItem1)
+    newElement.appendChild(menuItem2)
     content.appendChild(newElement)
 }
 
