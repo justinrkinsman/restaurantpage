@@ -1,4 +1,7 @@
 import Logo from './logo.png'
+import Shake from './shake.jpg'
+import Balls from './balls.jpg'
+import Salad from './salad.jpg'
 
 export function onLoad(){
     const element = document.getElementById('content')
@@ -68,14 +71,23 @@ export function componentMenu() {
     title.textContent = 'Menu'
     newElement.appendChild(title)
     const menuItem = document.createElement('p')
+    const menuItemPic = new Image();
+    menuItemPic.src = Shake
     const menuItem1 = document.createElement('p')
+    const menuItemPic1 = new Image();
+    menuItemPic1.src = Balls
     const menuItem2 = document.createElement('p')
+    const menuItemPic2 = new Image();
+    menuItemPic2.src = Salad
     menuItem.textContent = 'Protein Shake........$12' 
     menuItem1.textContent = 'Energy Balls.......$16'
     menuItem2.textContent = 'Macro Salad.........$14'
     newElement.appendChild(menuItem)
+    newElement.appendChild(menuItemPic)
     newElement.appendChild(menuItem1)
+    newElement.appendChild(menuItemPic1)
     newElement.appendChild(menuItem2)
+    newElement.appendChild(menuItemPic2)
     content.appendChild(newElement)
 }
 
@@ -99,3 +111,19 @@ export function componentContact() {
     newElement.appendChild(phoneNumber)
     content.appendChild(newElement)
 }
+
+
+/*
+Photo creds:
+shake:
+https://unsplash.com/photos/0BF_Kpcmyig
+https://unsplash.com/@louishansel
+
+balls:
+https://unsplash.com/photos/e34KSdVAs1U
+https://unsplash.com/@abbiew
+
+salad:
+https://unsplash.com/photos/IGfIGP5ONV0
+https://unsplash.com/@annapelzer
+*/
