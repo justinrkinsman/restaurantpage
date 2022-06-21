@@ -94,9 +94,10 @@ export function componentMenu() {
     menuEntry1.appendChild(menuItemPic1)
     menuEntry2.appendChild(menuItem2)
     menuEntry2.appendChild(menuItemPic2)
-    content.appendChild(menuEntry)
-    content.appendChild(menuEntry1)
-    content.appendChild(menuEntry2)
+    newElement.appendChild(menuEntry)
+    newElement.appendChild(menuEntry1)
+    newElement.appendChild(menuEntry2)
+    content.appendChild(newElement)
 }
 
 export function componentContact() {
