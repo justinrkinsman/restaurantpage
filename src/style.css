@@ -19,6 +19,7 @@ button {
     justify-content: left;
     margin: 50px 50px 50px 0px;
     align-items: center;
+    background-color: rgb(118, 20, 209)
 }
 
 #workout, #homeWorkout, #gym {
