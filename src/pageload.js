@@ -91,8 +91,11 @@ export function componentContact() {
     const title = document.createElement('h2')
     title.textContent = 'Contact'
     newElement.appendChild(title)
-    const tagline = document.createElement('p')
-    tagline.textContent = "Contact page coming soon!"
-    newElement.appendChild(tagline)
+    const address = document.createElement('p')
+    const phoneNumber = document.createElement('p')
+    address.textContent = "11124 Sunset Blvd. Los Angeles, CA"
+    phoneNumber.textContent = '555-5555'
+    newElement.appendChild(address)
+    newElement.appendChild(phoneNumber)
     content.appendChild(newElement)
 }
